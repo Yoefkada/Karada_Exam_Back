@@ -30,12 +30,4 @@ router.post('/category', authenticate, validateCategory, handleValidationErrors,
 router.get('/category/:id', authenticate, getCategoryById);
 router.delete('/category/:id', authenticate, deleteCategory);
 
-<<<<<<< HEAD
-=======
-router.put("/:id", authenticateToken, taskValidation, validateData, editTask);
-router.get("/:id", authenticateToken, getTaskById);
-router.get("/category/:id", authenticateToken, getCategoryById);
-router.patch("/delete/:id", authenticateToken, deleteTask);
-router.delete("/category/:id", authenticateToken, deleteCategory);
->>>>>>> e684b0b23e8dfd699f524c6ba022600ea6645df5
 module.exports = router;
